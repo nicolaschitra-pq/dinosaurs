@@ -1,0 +1,188 @@
+<html>
+<head>
+    <title>Food E-Commerce</title>
+    <link rel="stylesheet" href="E-Commerce Food.css">
+</head>
+<body>
+
+<div id="popup" class="popup">
+    <p id="popupText"></p>
+</div>
+
+<header class="header-canva">
+    <h1>Warkop Online</h1>
+    <p>Belanja makanan kesukaanmu</p>
+</header>
+
+<div id="cartBox">
+    <h3>Keranjang</h3>
+    <ul id="cartList"></ul>
+    <p id="totalHarga">Total: Rp 0</p>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="#">Makanan</a>
+            <ul class="submenu">
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">Traditional</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Minuman</a>
+            <ul class="submenu">
+                <li><a href="#">Cold Drink</a></li>
+                <li><a href="#">Hot Drink</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Snack</a>
+            <ul class="submenu">
+                <li><a href="#">Ringan</a></li>
+                <li><a href="#">Berat</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Promo</a>
+            <ul class="submenu">
+                <li><a href="#">Diskon</a></li>
+                <li><a href="#">Bundle</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Register</a>
+            <ul class="submenu">
+                <li><a href="#">Daftar</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<h2 id="form">Form Pendaftaran</h2>
+	Nama:<br>
+<input type="text" id="nama"><br><br>
+
+Kelas:<br>
+<input type="text" id="kelas"><br><br>
+
+<button type="button" id="okBTN">Daftar</button>
+<button type="button" id="clearBTN">Clear</button>
+</form>
+
+<div id="hasil"></div>
+
+<h2 id="makanan">Produk Makanan</h2>
+<div class="produk">
+
+<div class="card">
+	<img src="https://tornadoughalli.com/wp-content/uploads/2023/06/THE-BEST-CHEESEBURGER-RECIPE-FINALS-3-1.jpg">
+		<h3>Burger</h3>
+		<p>Cheese burger</p>
+		<p>Harga: Rp 25.000</p>
+	<button onclick="beli('Burger',25000)">Buy</button>
+</div>
+
+<div class="card">
+	<img src="https://www.inspiredtaste.net/wp-content/uploads/2023/08/Cheese-Pizza-2-1200.jpg">
+		<h3>Pizza</h3>
+		<p>Pizza Keju</p>
+		<p>Harga: Rp 40.000</p>
+	<button onclick="beli('Pizza',40000)">Buy</button>
+</div>
+
+<div class="card">
+	<img src="https://asset.kompas.com/crops/pbx_yXJty_AXSF_LLbyppjE8A1k=/72x15:952x601/1200x800/data/photo/2022/08/01/62e73d60a9595.jpg">
+		<h3>Ayam Goreng</h3>
+		<p>Ayam Goreng Crispy</p>
+		<p>Harga: Rp 20.000</p>
+	<button onclick="beli('Ayam Goreng',20000)">Buy</button>
+</div>
+
+<div class="card">
+	<img src="https://assets.unileversolutions.com/recipes-v2/258063.jpg">
+		<h3>Nasi Goreng</h3>
+		<p>Nasi goreng spesial</p>
+		<p>Harga: Rp 18.000</p>
+	<button onclick="beli('Nasi Goreng',18000)">Buy</button>
+</div>
+</div>
+
+<h2 id="minuman">Minuman</h2>
+<div class="produk">
+
+<div class="card">
+    <img src="https://www.cookmeindonesian.com/wp-content/uploads/2021/09/es-jeruk-final2.jpg">
+    <h3>Es Jeruk</h3>
+    <p>Minuman dingin segar</p>
+    <p>Harga: Rp 10.000</p>
+    <button onclick="beli('Es Jeruk',10000)">Buy</button>
+</div>
+
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Iced_Tea_from_flickr.jpg/250px-Iced_Tea_from_flickr.jpg">
+    <h3>Es Teh Manis</h3>
+    <p>Teh dingin manis</p>
+    <p>Harga: Rp 8.000</p>
+    <button onclick="beli('Es Teh Manis',8000)">Buy</button>
+</div>
+
+<div class="card">
+    <img src="https://umkm.asahankab.go.id/asset/foto_produk/kopi_panas3.png">
+    <h3>Kopi Panas</h3>
+    <p>Kopi hangat</p>
+    <p>Harga: Rp 12.000</p>
+    <button onclick="beli('Kopi Panas',12000)">Buy</button>
+</div>
+
+<div class="card">
+    <img src="https://umkm.asahankab.go.id/asset/foto_produk/Teh-tawar-manis3.jpg">
+    <h3>Teh Panas</h3>
+    <p>Teh hangat</p>
+    <p>Harga: Rp 7.000</p>
+    <button onclick="beli('Teh Panas',7000)">Buy</button>
+</div>
+</div>
+
+<h2 id="snack">Snack</h2>
+<div class="produk">
+
+<div class="card">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP6KZYNwSAAl7nFGlvHM3gJynAw1ELx1m3FSfsoimrNDqSIAXRcfKqdJObyzEWVjK4ogVwUMMZsZ7xjYefO2tvNky8LsZxU78e_3qs_7XMb7SI7mMP2Jo0BnWG_u7HGIOK-sfxe0V6NDUP/s1200/keripik-kentang-1.jpg">
+    <h3>Keripik Kentang</h3>
+    <p>Snack ringan gurih</p>
+    <p>Harga: Rp 12.000</p>
+    <button onclick="beli('Keripik Kentang',10000)">Buy</button>
+</div>
+
+<div class="card">
+    <img src="https://www.unileverfoodsolutions.co.id/dam/global-ufs/mcos/SEA/calcmenu/recipes/ID-recipes/Chicken-Stuffed-Peppers/Cireng%20isi%20Ayam-640.jpg">
+    <h3>Cireng</h3>
+    <p>Snack ringan manis</p>
+    <p>Harga: Rp 12.000</p>
+    <button onclick="beli('Cireng',12000)">Buy</button>
+</div>
+
+<div class="card">
+    <img src="https://www.awesomecuisine.com/wp-content/uploads/2009/05/french-fries.jpg">
+    <h3>French Fries</h3>
+    <p>Snack berat kentang goreng</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="beli('French Fries',15000)">Buy</button>
+</div>
+
+<div class="card">
+    <img src="https://www.allrecipes.com/thmb/DOhcP7hAGP_ams-a-M8A-16TeK4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-161469-the-best-ever-chicken-nuggets-DDMFS-4x3-e0f5af0ce26241d888967904f66962c7.jpg">
+    <h3>Chicken Nugget</h3>
+    <p>Snack berat ayam</p>
+    <p>Harga: Rp 18.000</p>
+    <button onclick="beli('Chicken Nugget',18000)">Buy</button>
+</div>
+</div>
+
+</div>
+
+<footer>
+    <p>© 2026 Food Store | Dibuat oleh siswa SMA</p>
+</footer>
+
+<script src="E-Commerce Food.js"></script>
+
+</body>
+</html>
